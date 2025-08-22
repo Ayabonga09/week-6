@@ -210,15 +210,6 @@ p {
 .footer-section ul li a:hover {
   text-decoration: underline;
 }
-/* Quote Box */
-.quote-box {
-  margin-top: 20px;
-  padding: 15px;
-  border-left: 5px solid #ff6600;
-  font-style: italic;
-  color: #ddd;
-  max-width: 400px;
-}
 
 /* Contact Form */
 .contact-form {
@@ -249,6 +240,25 @@ p {
 .contact-form button:hover {
   background: #e55b00;
 }
+
+/* Dark/Light Mode */
+body.light-mode {
+  background: #f5f5f5;
+  color: #222;
+}
+body.light-mode header {
+  background: #eee;
+}
+body.light-mode .nav-links a {
+  color: #222;
+}
+body.light-mode .nav-links a:hover,
+body.light-mode .nav-links a.active {
+  color: #ff6600;
+  background: #ddd;
+}
+
+
 
 /* Dark/Light Mode */
 body.light-mode {
