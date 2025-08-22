@@ -107,26 +107,6 @@ p {
   box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
 }
 
-.contact-section {
-  padding: 6rem 2rem;
-  text-align: left;
-}
-.contact-section h1 {
-  color: gold;
-  margin-bottom: 2rem;
-}
-.contact-info p {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-.contact-info a {
-  color: gold;
-  text-decoration: none;
-}
-.contact-info a:hover {
-  color: white;
-}
-
 
 .skills-section {
   padding: 5rem 2rem;
