@@ -1,11 +1,4 @@
-window.addEventListener("DOMContentLoaded", () => {
-  const quoteBox = document.getElementById("quote-box");
-  if (quoteBox) {
-    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-    quoteBox.textContent = randomQuote;
-  }
-});
-
+// --- Contact Form Validation ---
 const contactForm = document.getElementById("contact-form");
 if (contactForm) {
   contactForm.addEventListener("submit", function (e) {
@@ -16,17 +9,18 @@ if (contactForm) {
     const message = document.getElementById("message").value.trim();
 
     if (name === "" || email === "" || message === "") {
-      alert("Please fill in all fields before submitting.");
+      alert("⚠️ Please fill in all fields before submitting.");
       return;
     }
 
+    // simple email validation
     const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     if (!email.match(emailPattern)) {
-      alert("Please enter a valid email address.");
+      alert("⚠️ Please enter a valid email address.");
       return;
     }
 
-    alert("Message sent successfully!");
+    alert("✅ Message sent successfully!");
     contactForm.reset();
   });
 }
