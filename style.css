@@ -221,22 +221,7 @@ p {
   background: #e55b00;
 }
 
-/* Dark/Light Mode */
-body.light-mode {
-  background: #f5f5f5;
-  color: #222;
-}
-body.light-mode header {
-  background: #eee;
-}
-body.light-mode .nav-links a {
-  color: #222;
-}
-body.light-mode .nav-links a:hover,
-body.light-mode .nav-links a.active {
-  color: #ff6600;
-  background: #ddd;
-}
+
 
 
 
