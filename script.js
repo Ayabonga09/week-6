@@ -16,17 +16,17 @@ if (contactForm) {
     const message = document.getElementById("message").value.trim();
 
     if (name === "" || email === "" || message === "") {
-      alert("⚠️ Please fill in all fields before submitting.");
+      alert("Please fill in all fields before submitting.");
       return;
     }
 
     const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     if (!email.match(emailPattern)) {
-      alert("⚠️ Please enter a valid email address.");
+      alert("Please enter a valid email address.");
       return;
     }
 
-    alert("✅ Message sent successfully!");
+    alert("Message sent successfully!");
     contactForm.reset();
   });
 }
