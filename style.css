@@ -239,16 +239,4 @@ body.light-mode .nav-links a.active {
 }
 
 
-/* Default Dark */
-body {
-  background: #1c1c1c;
-  color: white;
-}
-
-/* Light Mode */
-body.dark-mode {
-  background: white;
-  color: black;
-}
-
 
