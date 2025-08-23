@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #000000, #1a1a1a);
+  color: white;
+  line-height: 1.6;
+  min-height: 100vh;
+}
 
 header {
   background: #111;
@@ -242,9 +249,6 @@ body.light-mode #theme-toggle {
 
 body.light-mode #theme-toggle:hover {
   color: #ff6600;
-}
-body{
-  background-image: url(images/Camera.jpg);
 }
 
 
