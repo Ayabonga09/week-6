@@ -191,6 +191,7 @@ p {
   text-decoration: underline;
 }
 
+/* Contact Form */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -248,3 +249,8 @@ body.light-mode #theme-toggle {
 body.light-mode #theme-toggle:hover {
   color: #ff6600;
 }
+
+
+
+
+
