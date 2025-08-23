@@ -191,7 +191,6 @@ p {
   text-decoration: underline;
 }
 
-/* Contact Form */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -220,13 +219,12 @@ p {
 .contact-form button:hover {
   background: #e55b00;
 }
-/* Light/Dark mode toggle */
+
 body.light-mode {
   background: #f9f9f9;
   color: #222;
 }
 
-/* Toggle button styling (works in both ul/li and div navs) */
 #theme-toggle {
   background: none;
   border: none;
@@ -237,17 +235,14 @@ body.light-mode {
   transition: 0.3s;
 }
 
-/* Space adjustment when next to links */
 .nav-links #theme-toggle {
   margin-right: 15px;
 }
 
-/* Hover effect */
 #theme-toggle:hover {
   color: #ff6600;
 }
 
-/* Light mode adjustments */
 body.light-mode #theme-toggle {
   color: #222;
 }
