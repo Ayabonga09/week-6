@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(images/OIP.webp)
+  background-image: url(images/OIP.webp);
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center;
   
 }
 
