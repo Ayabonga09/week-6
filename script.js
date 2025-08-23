@@ -60,20 +60,12 @@ document.addEventListener("DOMContentLoaded", () => {
 const toggleBtn = document.getElementById("theme-toggle");
 const body = document.body;
 
-if (localStorage.getItem("theme") === "light") {
-  body.classList.add("light-mode");
-  toggleBtn.textContent = "🌞";
-}
-
 toggleBtn.addEventListener("click", () => {
-  body.classList.toggle("light-mode");
+  body.classList.toggle("dark-mode");
 
-  if (body.classList.contains("light-mode")) {
-    toggleBtn.textContent = "🌞";
-    localStorage.setItem("theme", "light");
+  if (body.classList.contains("dark-mode")) {
+    toggleBtn.textContent = "☀️"; // Light mode
   } else {
-    toggleBtn.textContent = "🌙";
-    localStorage.setItem("theme", "dark");
+    toggleBtn.textContent = "🌙"; // Dark mode
   }
 });
-
