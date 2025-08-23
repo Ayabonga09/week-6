@@ -219,6 +219,7 @@ p {
 .contact-form button:hover {
   background: #e55b00;
 }
+/* Toggle button styling (works in both ul/li and div navs) */
 #theme-toggle {
   background: none;
   border: none;
@@ -229,14 +230,17 @@ p {
   transition: 0.3s;
 }
 
+/* Space adjustment when next to links */
 .nav-links #theme-toggle {
   margin-right: 15px;
 }
 
+/* Hover effect */
 #theme-toggle:hover {
   color: #ff6600;
 }
 
+/* Light mode adjustments */
 body.light-mode #theme-toggle {
   color: #222;
 }
@@ -244,9 +248,3 @@ body.light-mode #theme-toggle {
 body.light-mode #theme-toggle:hover {
   color: #ff6600;
 }
-
-
-
-
-
-
