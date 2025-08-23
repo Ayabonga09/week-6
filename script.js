@@ -1,4 +1,3 @@
-// -------- Dynamic Greeting --------
 function setGreeting() {
   const greetingEl = document.getElementById("greeting");
   const hour = new Date().getHours();
@@ -16,7 +15,6 @@ function setGreeting() {
 }
 setGreeting();
 
-// -------- Show/Hide Quote --------
 document.addEventListener("DOMContentLoaded", () => {
   const quoteBtn = document.getElementById("quote-btn");
   const quoteText = document.getElementById("quote-text");
@@ -34,13 +32,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// -------- Contact Form Validation --------
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contact-form");
 
   if (form) {
     form.addEventListener("submit", (e) => {
-      e.preventDefault(); // stop form from sending
+      e.preventDefault(); 
       const name = document.getElementById("name").value.trim();
       const email = document.getElementById("email").value.trim();
       const message = document.getElementById("message").value.trim();
@@ -60,17 +57,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-// Theme toggle
 const toggleBtn = document.getElementById("theme-toggle");
 const body = document.body;
 
-// Load saved theme
 if (localStorage.getItem("theme") === "light") {
   body.classList.add("light-mode");
   toggleBtn.textContent = "🌞";
 }
 
-// Toggle on click
 toggleBtn.addEventListener("click", () => {
   body.classList.toggle("light-mode");
 
