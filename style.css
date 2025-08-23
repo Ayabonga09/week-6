@@ -244,42 +244,6 @@ body.light-mode #theme-toggle {
 body.light-mode #theme-toggle:hover {
   color: #ff6600;
 }
-body {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-}
-
-body.home-page {
-  background-image: url("images/OIP.webp");
-}
-
-body.about-page {
-  background-image: url("images/OIP.webp");
-}
-
-body.skills-page {
-  background-image: url("images/OIP.webp");
-}
-
-body.education-page {
-  background-image: url("images/OIP.webp");
-}
-
-body.contact-page {
-  background-image: url("images/OIP\ \(1\).webp");
-}
-
-body.light-mode {
-  background-color: rgba(255, 255, 255, 0.85);
-  background-blend-mode: lighten;
-}
-
-body.dark-mode {
-  background-color: rgba(0, 0, 0, 0.6);
-  background-blend-mode: darken;
-}
 
 
 
