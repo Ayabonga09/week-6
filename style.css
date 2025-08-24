@@ -107,34 +107,6 @@ p {
   box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
 }
 
-
-.skills-section {
-  padding: 5rem 2rem;
-  text-align: left;
-}
-.skills-section h1 {
-  color: #ff6600;
-  margin-bottom: 2rem;
-  text-align: left;
-}
-.skills-container {
-  display: flex;
-  justify-content: space-around;
-  gap: 3rem;
-  flex-wrap: wrap;
-  text-align: left;
-}
-.skills-category ul {
-  list-style: none;
-  padding: 0;
-  
-}
-.skills-category ul li {
-  margin: 0.5rem 0;
-  font-size: 1.1rem;
-  
-}
-
 .education-section {
   padding: 5rem 2rem;
   max-width: 800px;
