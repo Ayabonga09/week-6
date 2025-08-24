@@ -61,13 +61,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggleBtn = document.getElementById("theme-toggle");
   const body = document.body;
 
-  // Load saved theme
+  
   if (localStorage.getItem("theme") === "light") {
     body.classList.add("light-mode");
     toggleBtn.textContent = "🌞";
   }
 
-  // Toggle on click
   toggleBtn.addEventListener("click", () => {
     body.classList.toggle("light-mode");
 
