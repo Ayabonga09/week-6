@@ -276,6 +276,19 @@ body.light-mode #theme-toggle {
 body.light-mode #theme-toggle:hover {
   color: #ff6600;
 }
+.floating-img {
+  width: 250px;       
+  border-radius: 50%; 
+  animation: float 4s ease-in-out infinite;
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); } 
+  100% { transform: translateY(0); }
+}
+
 
 
 
