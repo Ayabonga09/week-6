@@ -8,6 +8,17 @@ body {
   background: linear-gradient(to bottom, #000000, #1a1a1a);
    color: white; line-height: 1.6; min-height: 100vh; 
   }
+  
+body.home-page {
+  background: url("images/image.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.dark-mode {
+  background: #121212 !important;  
+  color: #f5f5f5;
+}
+
 header {
   background: #111;
   padding: 15px 30px;
