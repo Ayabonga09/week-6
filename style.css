@@ -167,16 +167,17 @@ p {
   margin-bottom: 0.7rem;
 }
 
-.footer-section ul li a {
-  color: #ccc;
-  text-decoration: none;
-  transition: color 0.3s ease, padding-left 0.3s ease;
+.footer-section ul li a i {
+  margin-right: 8px;
+  color: #ff6600;   
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.footer-section ul li a:hover {
-  color: #ff6600;
-  padding-left: 5px;
+.footer-section ul li a:hover i {
+  color: #ff3300;
+  transform: scale(1.2);
 }
+
 
 .footer-bottom {
   text-align: center;
