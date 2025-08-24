@@ -6,8 +6,8 @@
 body { 
   font-family: 'Segoe UI', sans-serif; 
   background: linear-gradient(to bottom, #000000, #1a1a1a);
-   color: white; line-height: 1.6; min-height: 100vh; }
-
+   color: white; line-height: 1.6; min-height: 100vh; 
+  }
 header {
   background: #111;
   padding: 15px 30px;
