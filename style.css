@@ -167,15 +167,21 @@ p {
   margin-bottom: 0.7rem;
 }
 
+
 .footer-section ul li a i {
+  background: #444;         
+  color: #fff;              
+  padding: 10px;
+  border-radius: 6px;       
   margin-right: 8px;
-  color: #ff6600;   
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
+
 .footer-section ul li a:hover i {
-  color: #ff3300;
-  transform: scale(1.2);
+  background: #ff6600;      
+  color: #fff;             
+  transform: scale(1.1);
 }
 
 
