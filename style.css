@@ -110,11 +110,12 @@ p {
 
 .skills-section {
   padding: 5rem 2rem;
-  text-align: center;
+  text-align: left;
 }
 .skills-section h1 {
   color: #ff6600;
   margin-bottom: 2rem;
+  text-align: left;
 }
 .skills-container {
   display: flex;
@@ -126,14 +127,17 @@ p {
 .skills-category h2 {
   color: #ff6600;
   margin-bottom: 1rem;
+  text-align: left;
 }
 .skills-category ul {
   list-style: none;
   padding: 0;
+  text-align: left;
 }
 .skills-category ul li {
   margin: 0.5rem 0;
   font-size: 1.1rem;
+  text-align: left;
 }
 
 .education-section {
@@ -143,7 +147,7 @@ p {
 }
 .education-section h1 {
   color: #ff6600;
-  text-align: center;
+  text-align: left;
   margin-bottom: 2rem;
 }
 .education-section ul {
