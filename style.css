@@ -111,6 +111,7 @@ p {
   padding: 5rem 2rem;
   max-width: 800px;
   margin: auto;
+  text-align: left;
 }
 .education-section h1 {
   color: #ff6600;
@@ -120,11 +121,13 @@ p {
 .education-section ul {
   list-style: none;
   padding: 0;
+  text-align: left;
 }
 .education-section li {
   margin-bottom: 2rem;
   font-size: 1.1rem;
   line-height: 1.6;
+  text-align: left;
 }
 .education-section strong {
   color: #ff6600;
