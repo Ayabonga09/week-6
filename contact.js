@@ -6,7 +6,7 @@ import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/9.22.
 const firebaseConfig = {
   apiKey: "AIzaSyDkGFA3no9bsuQrt5xQc_cyXS5_3Ybmbss",
   authDomain: "ayabonga-portfolio.firebaseapp.com",
-  databaseURL: "https://ayabonga-portfolio-default-rtdb.firebaseio.com",
+  databaseURL: "https://ayabonga-portfolio-default-rtdb.europe-west1.firebasedatabase.app/",
   projectId: "ayabonga-portfolio",
   storageBucket: "ayabonga-portfolio.appspot.com",
   messagingSenderId: "1038329172569",
