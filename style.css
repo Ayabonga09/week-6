@@ -317,6 +317,9 @@ body.light-mode #theme-toggle:hover {
   50% { transform: translateY(-15px); } 
   100% { transform: translateY(0); }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 
 
