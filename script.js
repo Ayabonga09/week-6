@@ -79,4 +79,51 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+// --- FILTER PROJECTS ---
+const filterButtons = document.querySelectorAll(".filter-btn");
+const projects = document.querySelectorAll(".project-card");
+
+filterButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const category = btn.dataset.category;
+
+    projects.forEach(project => {
+      if (category === "all" || project.dataset.category === category) {
+        project.style.display = "block";
+      } else {
+        project.style.display = "none";
+      }
+    });
+  });
+});
+
+// --- FETCH GITHUB REPOS ---
+const githubUsername = "Ayabonga09"; // 🔥 replace with your GitHub username
+const reposContainer = document.getElementById("github-repos");
+
+async function fetchRepos() {
+  try {
+    const response = await fetch(`https://api.github.com/users/${githubUsername}/repos`);
+    const repos = await response.json();
+
+    reposContainer.innerHTML = ""; // clear existing content
+
+    repos.forEach(repo => {
+      const repoCard = document.createElement("div");
+      repoCard.classList.add("project-card");
+      repoCard.innerHTML = `
+        <h3>${repo.name}</h3>
+        <p>${repo.description || "No description available"}</p>
+        <a href="${repo.html_url}" target="_blank">View on GitHub</a>
+      `;
+      reposContainer.appendChild(repoCard);
+    });
+  } catch (error) {
+    console.error("Error fetching repos:", error);
+    reposContainer.innerHTML = "<p>⚠️ Could not load GitHub repos.</p>";
+  }
+}
+
+fetchRepos();
+
 
