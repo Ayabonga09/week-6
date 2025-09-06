@@ -91,7 +91,6 @@ async function fetchProjects() {
     console.log(repos); 
     displayProjects(repos);
 
-  
     filterInput.addEventListener("input", () => {
       const searchTerm = filterInput.value.toLowerCase();
       const filtered = repos.filter(repo =>
@@ -111,10 +110,16 @@ function displayProjects(repos) {
     const card = document.createElement("div");
     card.classList.add("project-card");
 
+    const liveDemoUrl = `https://${username}.github.io/${repo.name}/`;
+
     card.innerHTML = `
-      <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+      <h3>${repo.name}</h3>
       <p>${repo.description ? repo.description : "No description"}</p>
       ${repo.language ? `<span class="language-badge">${repo.language}</span>` : ""}
+      <div class="project-links">
+        <a href="${repo.html_url}" target="_blank">🔗 View Code</a>
+        <a href="${liveDemoUrl}" target="_blank">🚀 Live Demo</a>
+      </div>
     `;
 
     projectsContainer.appendChild(card);
