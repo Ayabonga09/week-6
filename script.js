@@ -90,7 +90,6 @@ async function fetchProjects() {
 
     displayProjects(repos);
 
-    // Filter functionality
     filterInput.addEventListener("input", () => {
       const searchTerm = filterInput.value.toLowerCase();
       const filtered = repos.filter(repo =>
