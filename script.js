@@ -117,8 +117,9 @@ function displayProjects(repos) {
       <p>${repo.description ? repo.description : "No description"}</p>
       ${repo.language ? `<span class="language-badge">${repo.language}</span>` : ""}
       <div class="project-links">
-        <a href="${repo.html_url}" target="_blank">🔗 View Code</a>
-        <a href="${liveDemoUrl}" target="_blank">🚀 Live Demo</a>
+        <a href="${repo.html_url}" target="_blank">View Code</a>
+        <br>
+        <a href="${liveDemoUrl}" target="_blank">Live Demo</a>
       </div>
     `;
 
