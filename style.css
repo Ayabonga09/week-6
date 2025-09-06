@@ -402,3 +402,45 @@ html {
   font-size: 0.8em;
   font-weight: bold;
 }
+.skills-section {
+  padding: 5rem 2rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.skills-section h1 {
+  color: #ff6600;
+  margin-bottom: 1rem;
+}
+
+.skills-intro {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.skill-box h3 {
+  margin: 1rem 0 0.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.skill-bar {
+  background-color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.skill-level {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: right;
+  font-weight: bold;
+  border-radius: 8px 0 0 8px;
+  transition: width 1s ease-in-out;
+}
+
