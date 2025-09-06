@@ -140,6 +140,27 @@ p {
 .education-section strong {
   color: #ff6600;
 }
+.education-box {
+  background-color: #1a1a1a;
+  border: 2px solid #ff6600;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.education-box:hover {
+  transform: scale(1.02);
+}
+.education-box {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .footer-container {
   display: flex;
   justify-content: space-around;
@@ -320,7 +341,6 @@ body.light-mode #theme-toggle:hover {
 html {
   scroll-behavior: smooth;
 }
-/* Projects Section */
 .projects-section {
   text-align: center;
   padding: 60px 20px;
