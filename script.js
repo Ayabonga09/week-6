@@ -118,8 +118,6 @@ function displayProjects(repos) {
       ${repo.language ? `<span class="language-badge">${repo.language}</span>` : ""}
       <div class="project-links">
         <a href="${repo.html_url}" target="_blank">View Code</a>
-        <br>
-        <a href="${liveDemoUrl}" target="_blank">Live Demo</a>
       </div>
     `;
 
