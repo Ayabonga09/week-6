@@ -79,33 +79,50 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-const githubUsername = "Ayabonga09"; 
-const reposContainer = document.getElementById("github-repos");
+const username = "Ayabonga09"; 
+const projectsContainer = document.getElementById("projectsContainer");
+const filterInput = document.getElementById("filterInput");
 
-async function fetchRepos() {
+async function fetchProjects() {
   try {
-    const response = await fetch(`https://api.github.com/users/${githubUsername}/repos`);
+    const response = await fetch(`https://api.github.com/users/${username}/repos`);
     const repos = await response.json();
 
-    reposContainer.innerHTML = ""; 
+    console.log(repos); 
+    displayProjects(repos);
 
-    repos.forEach(repo => {
-      const repoCard = document.createElement("div");
-      repoCard.classList.add("project-card");
-      repoCard.innerHTML = `
-        <h3>${repo.name}</h3>
-        <p>${repo.description || "No description available"}</p>
-        <a href="${repo.html_url}" target="_blank">View on GitHub</a>
-      `;
-      reposContainer.appendChild(repoCard);
+  
+    filterInput.addEventListener("input", () => {
+      const searchTerm = filterInput.value.toLowerCase();
+      const filtered = repos.filter(repo =>
+        repo.name.toLowerCase().includes(searchTerm) ||
+        (repo.language && repo.language.toLowerCase().includes(searchTerm))
+      );
+      displayProjects(filtered);
     });
   } catch (error) {
     console.error("Error fetching repos:", error);
-    reposContainer.innerHTML = "<p>⚠️ Could not load GitHub repos.</p>";
   }
 }
 
-fetchRepos();
+function displayProjects(repos) {
+  projectsContainer.innerHTML = "";
+  repos.forEach(repo => {
+    const card = document.createElement("div");
+    card.classList.add("project-card");
+
+    card.innerHTML = `
+      <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+      <p>${repo.description ? repo.description : "No description"}</p>
+      ${repo.language ? `<span class="language-badge">${repo.language}</span>` : ""}
+    `;
+
+    projectsContainer.appendChild(card);
+  });
+}
+
+fetchProjects();
+
 
 
 
