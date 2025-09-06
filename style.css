@@ -443,4 +443,36 @@ html {
   border-radius: 8px 0 0 8px;
   transition: width 1s ease-in-out;
 }
+body.skills-page {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+.skill-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.skill-level {
+  animation: growBar 2s ease forwards;
+}
+
+@keyframes growBar {
+  from { width: 0; }
+  to { width: var(--level); }
+}
+.skill-box h3 i {
+  margin-right: 10px;
+  color: #ff6600;
+  text-shadow: 0 0 5px #ff6600;
+  transition: transform 0.3s ease;
+}
+
+.skill-box h3:hover i {
+  transform: scale(1.2);
+}
 
