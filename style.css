@@ -288,6 +288,11 @@ body.light-mode .footer-bottom {
 .contact-info a:hover {
   color: white;
 }
+@media screen and (max-width: 768px) {
+  body {
+    display: none;
+  }
+}
 
 
 
