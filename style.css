@@ -237,64 +237,43 @@ body.light-mode .footer-bottom {
   color: #444;
   border-top: 1px solid #bbb;
 }
-.contact-section {
-  padding: 4rem 2rem;
-  background: linear-gradient(to bottom, #000000, #1a1a1a);
-}
-
-.contact-wrapper {
+.contact-box {
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.3);
   max-width: 1000px;
   margin: auto;
-  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.contact-form {
+.contact-left,
+.contact-right {
   flex: 1;
-  background: #1e1e1e;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(255, 102, 0, 0.3);
-  min-width: 300px;
+  color: #fff;
 }
 
-.contact-info {
-  flex: 1;
-  background: #1e1e1e;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(255, 102, 0, 0.3);
-  color: #ccc;
-  min-width: 300px;
-}
-
-.contact-info h2 {
+.contact-left h1,
+.contact-right h2 {
   color: gold;
   margin-bottom: 1rem;
 }
 
-.contact-info p {
+.contact-right p {
   margin: 0.8rem 0;
   font-size: 1rem;
 }
 
-.contact-info a {
+.contact-right a {
   color: orange;
   text-decoration: none;
 }
 
-.contact-info a:hover {
+.contact-right a:hover {
   color: white;
 }
-@media screen and (max-width: 768px) {
-  body {
-    display: none;
-  }
-}
-
-
 
 body.light-mode {
   background: #f9f9f9;
